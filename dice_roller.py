@@ -12,7 +12,8 @@ def main():
 		else:
 			print(f'You rolled a {roll}')
 		dice_sum += roll
-	print(f'You rolled a total of {dice_sum}')
+	if dice_size != 20:
+		print(f'You rolled a total of {dice_sum}')
 
 if __name__== "__main__":
 	main()
